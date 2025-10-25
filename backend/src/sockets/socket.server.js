@@ -10,7 +10,7 @@ const { createMemory, queryMemory } = require("../services/vector.service");
 function initSocketServer(httpServer) {
   const io = new Server(httpServer, {
     cors: {
-      origin: "https://chatbot-clone-seven.vercel.app",
+      origin: "http://localhost:5173",
       allowedHeaders: ["Content-Type", "Authorization"],
       credentials: true,
     },
